@@ -1,0 +1,309 @@
+---
+title: "Mapping US Immigration in 1880"
+author: "SHA 2017 GIS workshop unit 1"
+output: 
+  revealjs::revealjs_presentation: 
+    theme: "serif"
+    transition: "none"
+    highlight: "zenburn"
+    center: TRUE
+    fig_caption: TRUE
+    
+---
+
+## Introductions
+
+---
+
+## About the instructor
+
+* Academic: http://personal.tcu.edu/kylewalker/
+* Consulting/blog: http://walkerke.github.io/
+* Twitter: https://twitter.com/kyle_e_walker
+
+---
+
+### Mapping Immigrant America
+
+<iframe src="http://personal.tcu.edu/kylewalker/immigrant-america/" width = "900" height="600" frameborder="0" scrolling="no"></iframe>
+
+---
+
+## Data
+
+* The **information** component of GIS
+* Example: Texas county data in Excel spreadsheet
+
+<img src=img/data.png style="width: 750px">
+
+---
+
+## **Geographic** data
+
+* Geographic data includes **reference to position on Earth's surface**
+* Example: Tarrant County
+
+---
+
+## Geographic data
+
+<img src=img/tarrant.png style="width: 775px">
+
+---
+
+## GIS data displayed as **layers**
+
+<img src=img/layers.png style="width: 450px">
+
+<span class="footnote">Image source: [Wexford County, MI](http://wexfordcounty.org/Services/GIS/WhatisGIS.aspx)</span>
+
+---
+
+## Data models: abstraction of reality
+
+<img src=img/data-models.png style="width: 850px">
+
+---
+
+## Types of GIS data
+
+* Vector data: used to represent discrete geographic features
+ * Examples: cities, lakes, roads
+* Raster data: used to represent continuous geographic phenomena
+ * Examples: imagery, elevation, temperature
+
+---
+
+## Vector data
+
+* **Coordinate pairs** form **points, lines, and polygons**
+
+<img src=img/vector.png style="width: 800px">
+
+---
+
+## Points: Large cities in Texas
+
+<img src=img/points.png style="width: 600px">
+
+---
+
+## Lines: Interstate highways
+
+<img src=img/lines.png style="width: 600px">
+
+---
+
+## Polygons: Counties
+
+<img src=img/polygons.png style="width: 600px">
+
+---
+
+## US counties in 1880
+
+---
+
+## Attribute data in a GIS: the __table__
+
+<img src=img/table.png style="width: 800px">
+
+---
+
+## Rows and columns
+
+<img src=img/rowcol.png style="width: 750px">
+
+---
+
+## Attribute types
+
+<img src=img/types.png style="width: 830px">
+
+---
+
+## Joining and relating tables in a GIS
+
+* In a GIS, tables can be associated with each other through __joins__ or __relates__
+* __Join__: attributes from __target table__ merged to a __source table__
+* __Relate__: attributes from target table associated with source table; not merged in
+* Joins and relates based upon a __key field__
+
+---
+
+## Joins
+
+<img src=img/joins.png style="width: 750px">
+
+---
+
+## Types of joins
+
+* Inner join: __only the matching rows__ are retained
+* Outer join: __all rows are retained__, regardless of the presence or absence of a match between source and target tables 
+* Left (outer) join: __all rows in the source table__ are retained
+
+---
+
+## Inner vs. outer joins
+
+<img src=img/innerouter.png style="width: 800px">
+
+---
+
+## Joining shape and tabular data
+
+---
+
+## Queries
+
+* Records can be accessed within databases through the use of __queries__
+* Queries commonly used to subset data based on a given set of desired attribute values
+
+---
+
+## __S__tructured __Q__uery __L__anguage (SQL)
+
+* Common language for querying databases
+
+Example SQL statement: 
+```sql
+SELECT * FROM Texas_counties WHERE "Total" > 100000
+```
+* Used in ArcGIS to select and subset data
+
+---
+
+## Boolean operators
+
+* Used to define multiple criteria in a selection query
+* __AND__: Selects records where both criteria are met
+* __OR__: Selects records where at least one of the criteria are met
+* __NOT__: Restricts selection to records that do not satisfy a specified criterion
+* __XOR__: Selects records where one, but not both, of the criteria are met
+
+---
+
+## Querying our data
+
+---
+
+## Choropleth maps
+
+<img src=img/newark.jpg style="width: 750px" />
+
+
+---
+
+## Dot-density 
+
+<img src=img/chicago.jpg style="width: 400px" />
+
+<span class="footnote">Source: Radical Cartography</span>
+
+---
+
+## Designing a map: key considerations
+
+* What are you mapping? 
+* Who is your audience? 
+* In what format will you be presenting the map?  
+
+---
+
+## Visual variables in cartography
+
+<img src=img/vis-var.png style="width: 500px" />
+
+---
+
+## Color selection
+
+* **Hue**: color, commonly understood (red, blue, green)
+* **Lightness** or **Value**: extent to which color is light or dark
+* **Saturation**: vividness of the color
+
+<img src=img/color1.png style="width: 400px" />
+
+<span class="footnote">Image source: Wikipedia</span>
+
+---
+
+## Color selection
+
+<img src=img/schemes.png style="width: 800px" />
+
+<span class="footnote">Source: Brewer, *Designing Better Maps*</span>
+
+
+---
+
+### Color selection
+
+* What does your color choice say to the map reader?  
+
+<img src=img/badmap.jpg style="width: 600px" />
+
+<span class="footnote">Source: Brewer, *Designing Better Maps*</span>
+
+
+---
+
+## Styling our immigration map
+
+---
+
+### Layout and map elements
+
+<img src=img/layout.png style="width: 800px" />
+
+---
+
+## Visual hierarchy of map elements
+
+<img src=img/hierarchy.png style="width: 800px" />
+
+---
+
+### Cartography and the basemap
+
+<img src=img/basemap1.png style="width: 800px" />
+
+<span class="footnote">Source: [Kenneth Field, *Cartonerd*](http://cartonerd.blogspot.com/2014/03/cart-oh-nono-1-blending-choropleths-and.html)</span>
+
+---
+
+### Cartography and the basemap
+
+<img src=img/basemap2.png style="width: 800px" />
+
+<span class="footnote">Source: [Kenneth Field, *Cartonerd*](http://cartonerd.blogspot.com/2014/03/cart-oh-nono-1-blending-choropleths-and.html)</span>
+
+---
+
+## Creating our map layout
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+.reveal section img {
+  background:none; 
+  border:none; 
+  box-shadow:none;
+  }
+  
+</style>
