@@ -1,5 +1,5 @@
 ---
-title: "Mapping US Immigration in 1880"
+title: "Mapping US immigration in 1880"
 author: "SHA 2017 GIS workshop unit 1"
 output: 
   revealjs::revealjs_presentation: 

@@ -1,0 +1,44 @@
+---
+title: "Analyzing cholera in 1850s London"
+author: "SHA 2017 GIS workshop unit 2"
+output: 
+  revealjs::revealjs_presentation: 
+    theme: "serif"
+    transition: "none"
+    highlight: "zenburn"
+    center: TRUE
+    fig_caption: TRUE
+    
+---
+
+## Spatial data analysis
+
+<img src=assets/img/snow.png style="width: 800px">
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+.reveal section img {
+  background:none; 
+  border:none; 
+  box-shadow:none;
+  }
+  
+</style>
