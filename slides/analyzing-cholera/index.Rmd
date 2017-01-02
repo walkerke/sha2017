@@ -13,11 +13,126 @@ output:
 
 ## Spatial data analysis
 
-<img src=assets/img/snow.png style="width: 800px">
+<img src=img/snow.png style="width: 800px">
 
 ---
 
+### Longitude and latitude: the basics
 
+<img src=img/coordinates.png>
+
+---
+
+### Geographic coordinates
+
+* Longitude (X) and latitude (Y) coordinates can be expressed as:
+  + Degrees minutes seconds (e.g. $97^{\circ}21'37''W$, $32^{\circ}42'38''N$)
+  + Decimal degrees (e.g. $-97.36$, $32.71$)
+
+Conversion between DMS and decimal degrees:
+
+$$DD = D + \frac{M}{60} + \frac{S}{3600}$$
+
+---
+
+## Coordinate systems
+
+* __Geographic coordinate system__: coordinate system based on latitude and longitude (coordinates on a sphere)
+* __Projected coordinate system__: coordinate system projected onto a two-dimensional surface (coordinates on a plane)
+* Example: http://bl.ocks.org/mbostock/raw/5731632
+
+---
+
+## Map projections
+
+<iframe src="http://personal.tcu.edu/kylewalker/introgis/projections.html" width = "900" height = "500" frameBorder = "0"></iframe><figcaption>Original source: Mike Bostock</figcaption>
+
+---
+
+### Map projections and distortion
+
+Examples: 
+
+* http://bl.ocks.org/curran/raw/01aa2685f083b6c1b9fb
+* http://bl.ocks.org/enjalot/raw/bd552e711b8325c64729
+
+---
+
+## Importing XY data into ArcMap
+
+---
+
+## Working with coordinate systems in ArcMap
+
+---
+
+## Buffering
+
+* A __buffer__ is a feature that delineates the area within a given distance of an input feature 
+
+<img src=img/buffer.gif style="width: 700px">
+
+---
+
+## Buffering, continued
+
+<img src=img/buffer2.png style="width: 800px">
+
+---
+
+## Thiessen polygons
+
+<img src="http://resources.esri.com/help/9.3/arcgisengine/java/gp_toolref/analysis_tools/thiessen_esri.gif" style="width: 600px"><figcaption>Source: Esri</figcaption>
+
+---
+
+## Map overlay
+
+<img src=img/overlay.gif style="width: 800px">
+
+---
+
+## The "point-in-polygon" problem
+
+<img src=img/p-in-p.png style="width: 800px">
+
+---
+
+## Spatial joins
+
+<img src=img/sp-join.png style="width: 800px">
+
+---
+
+## Spatial data analysis in ArcMap
+
+---
+
+## Density surfaces ("heat" maps)
+
+* Raster grid fit over distribution of points
+* For each cell, the "density" of points is calculated for a "neighborhood" around that cell
+
+---
+
+## Kernel density
+
+* Creates a density surface by fitting a "kernel" (distance-decay function) over each cell
+
+<img src=img/kd1.jpg style="width: 800px">
+
+---
+
+## How kernel density works
+
+* Points tabulated within kernel bandwidth ("search distance" in ArcGIS) of each grid cell
+* Points weighted based on distance-decay function, then used to calculate area
+
+<img src=img/kd2.png style="width: 800px">
+
+---
+
+## Density mapping in ArcMap
 
 
 

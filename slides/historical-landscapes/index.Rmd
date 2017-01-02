@@ -1,0 +1,195 @@
+---
+title: "Re-constructing historical landscapes"
+author: "SHA 2017 GIS workshop unit 3"
+output: 
+  revealjs::revealjs_presentation: 
+    theme: "serif"
+    transition: "none"
+    highlight: "zenburn"
+    center: TRUE
+    fig_caption: TRUE
+    
+---
+
+## Historical imagery
+
+---
+
+## Raster data
+
+* Grid of cells that form a continuous surface
+* Each grid cell contains a value that represents some real-world phenomena (e.g. elevation, land use)
+
+<img src=img/raster.png style="width: 750px">
+
+---
+
+### **Quantitative** and **qualitative** rasters
+
+<img src=img/qualquant.png style="width: 850px">
+
+---
+
+### Raster data resolution
+
+* **Cell dimension**: the size of each grid cell (e.g. 30 meters by 30 meters)
+* **Resolution**: the relative size of the grid cell
+
+<img src=img/resolution.png style="width: 850px">
+
+---
+
+### Types of raster data
+
+* ArcGIS and other GIS packages can handle a variety of raster formats, including:
+  + Image files (JPEG, TIFF, BMP, PNG, etc.)
+  + Geo-enhanced image files (GeoTIFF, GeoJPEG)
+  + ESRI GRID, ESRI ASCII GRID
+  + Remotely sensed imagery (e.g. ERDAS Imagine .img files)
+  + Many more.
+
+---
+
+## Raster data and cell sizes
+
+<img src=img/cellsize.png style="width: 850px">
+
+---
+
+## 3D coordinate systems
+
+* _Z-coordinates_: vertical measurements (elevation), or measurement of magnitude
+
+<img src=img/coords.gif style="width: 800px">
+
+---
+
+## Vertical datums
+
+* Reference for measuring heights/elevation
+* Common vertical datums:
+ * Mean sea level
+ * The geoid (orthometric heights)
+ 
+<img src=img/heights.gif style="width: 400px">
+
+---
+
+### Digital Elevation Models (DEMs)
+
+* Raster representation of a terrain's (commonly the Earth's) surface
+
+<img src=img/dem.png style="width: 800px">
+
+---
+
+## How DEMs are produced
+
+* Original elevation measurements taken by field surveying
+* Additional information supplied by:
+ + Analysis of remotely sensed imagery / photogrammetry
+ + Laser technology (Light Detection and Ranging, or LiDAR)
+* [USGS National Map Viewer: Portal for downloading DEMs](http://viewer.nationalmap.gov/viewer/)
+
+---
+
+## DEMs in ArcMap
+
+---
+
+## Surface (terrain) analysis
+
+* Used to model the topographic characteristics of a given landscape
+* Applications:
+ + Shaded relief mapping
+ + Construction and transportation planning
+ + Hydrologic modeling (flood zones, river flow, watershed boundary delineation)
+
+---
+ 
+## Slope
+
+* Definition: how elevation changes with horizontal position (rise over run!)
+* In a GIS, slope is often measured in degrees
+
+<img src=img/slope.png style="width: 800px">
+
+---
+
+## How slope is calculated
+
+<img src=img/slopecalc.png style="width: 800px">
+
+---
+
+## Aspect
+
+* The steepest downhill direction at a given point; can be thought of as the __direction__ of the slope
+
+<img src=img/aspect.png style="width: 800px">
+
+---
+
+## Hillshading
+
+* Representation of three-dimensional characteristics of a two-dimensional surface
+* Used to produce shaded relief maps
+
+<img src=img/hillshade.jpg style="width: 600px">
+
+---
+
+## Surface analysis in ArcMap
+
+---
+
+## Contours
+
+* Lines that connect cells of equal value in a raster (e.g. isolines)
+* Applications: elevation, temperature, pollution, etc.
+
+<img src=img/contours.png style="width: 800px">
+
+---
+
+## Viewshed analysis
+
+* __Viewshed__: the cells in a raster that can be viewed from a given point(s)
+* __Lines of sight__ calculated for points based on a DEM
+
+<img src=img/viewshed.png style="width: 800px">
+
+
+---
+
+## 3D GIS concepts
+
+* **Extrusion**: vertical stretching of a 2D shape for display in 3D, based on some attribute or value
+
+* **Base heights**: how elevation/height values are defined within a three-dimensional GIS view
+
+* **Drape**: display of a layer in three dimensions given the defined base heights
+
+---
+
+## 3D visualization in ArcScene
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+.reveal section img {
+  background:none; 
+  border:none; 
+  box-shadow:none;
+  }
+  
+</style>

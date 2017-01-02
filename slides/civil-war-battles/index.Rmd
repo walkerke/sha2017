@@ -1,0 +1,141 @@
+---
+title: "Interactive visualization of Civil War battle sites"
+author: "SHA 2017 GIS workshop unit 4"
+output: 
+  revealjs::revealjs_presentation: 
+    theme: "serif"
+    transition: "none"
+    highlight: "zenburn"
+    center: TRUE
+    fig_caption: TRUE
+    
+---
+
+## Maps on the internet
+
+---
+
+<iframe src="http://personal.tcu.edu/kylewalker/maps/dfw_election.html" width="900" height="550" scrolling="no" frameborder="0"></iframe>
+
+---
+
+### Web pages: client/server architecture
+
+* **Web server** hosts and serves sites and data to be consumed by **web clients** (e.g. your browser)
+
+<img src=img/client-server.jpg style="width: 700px" />
+
+<span class="footnote">Source: Fu and Sun (2011)</span>
+
+---
+
+## Tiled mapping
+
+* To speed browsing, web maps often display map images as "tiles"
+* Tiles are defined by their **zoom level** and **coordinates**
+* Common coordinate system: __Web Mercator__
+
+---
+
+### How tiled mapping systems work
+
+<img src=img/tiled-mapping.png style="width: 700px" />
+
+<span class="footnote">Source: Bing Maps</span>
+
+---
+
+## CARTO
+
+* Spatial database in the cloud
+* 'Freemium' service; free to get started, more storage costs more money
+* Powerful interface for running queries, visualizing your data; dashboard capabilities
+* Link: http://www.carto.com
+
+---
+
+## Loading data into CARTO
+
+---
+
+## What makes a good web map?
+
+* Brian Timoney: maps should be __fast__, __intuitive__, __informative__, and __fast__!
+* This can be accomplished through __generalization__ and __minimalism__
+
+---
+
+## Web map design
+
+* Principles of web map design: 
+ * Generalization
+ * Scalability
+ * Minimalism
+
+---
+
+## Generalization
+
+* Important to consider purpose of your map when selecting resolution of your data
+
+<img src=img/general.png style="width: 800px">
+
+
+---
+
+## Generalization
+
+* At small scales, lots of detail can be unnecessary and computationally burdensome 
+* Large feature services can be very slow in web maps
+* When building applications, ask yourself: how much detail do I need?
+
+* In ArcGIS: look for the "Generalization" toolset in the "Cartography" toolbox
+
+---
+
+## Scalability
+
+Example: [NPR Census Map](http://www.npr.org/censusmap)
+
+---
+
+### Minimalism (when appropriate)
+
+<img src=img/clutter.png style="width: 800px">
+
+---
+
+### Minimalist solution
+
+<iframe width="800" height="500" src="https://dl.dropbox.com/s/z7zl839nb18gdgf/xs_customers2.html" frameborder="0" allowfullscreen></iframe>
+
+---
+
+## Styling data in CARTO
+
+---
+
+## CARTO widgets
+
+---
+
+## Wrap-up discussion
+
+
+
+
+
+
+
+
+
+
+<style>
+
+.reveal section img {
+  background:none; 
+  border:none; 
+  box-shadow:none;
+  }
+  
+</style>

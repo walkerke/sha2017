@@ -22,8 +22,8 @@ Topics to cover:
 
 * Map projections and coordinate systems
 * Importing longitude/latitude data into ArcMap
-* Raster data in a GIS
-* Interpolation, density mapping, and point pattern analysis
+* Spatial data analysis
+* Density mapping and point pattern analysis
 
 ## Lunch (on your own): 12:00-1:00
 
@@ -34,6 +34,7 @@ __1:00-2:30: Re-constructing historical landscapes__
 Topics to cover: 
 
 * Historical imagery
+* Raster data in a GIS
 * Digital elevation models (DEMs)
 * Terrain modeling
 * Three-dimensional visualization
