@@ -4,4 +4,4 @@ This repository contains materials for the Geographic Information Systems worksh
 
 The agenda and links to the slides for the workshop can be found at https://github.com/walkerke/sha2017/blob/master/agenda.md.  
 
-The data bundle for the workshop can be downloaded here: https://dl.dropbox.com/s/8ulg2pv4vq2knpn/sha2017data.zip
+The data bundle for the workshop can be downloaded here: https://dl.dropbox.com/s/w8f4wpgp697fwhx/sha2017data.zip
