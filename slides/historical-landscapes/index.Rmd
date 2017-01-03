@@ -50,28 +50,22 @@ output:
 
 ---
 
-## Raster data and cell sizes
-
-<img src=img/cellsize.png style="width: 850px">
-
----
-
-## 3D coordinate systems
+### 3D coordinate systems
 
 * _Z-coordinates_: vertical measurements (elevation), or measurement of magnitude
 
-<img src=img/coords.gif style="width: 800px">
+<img src=img/coords.gif style="width: 800px"><figcaption>Source: [Bolstad, _GIS Fundamentals_](http://www.paulbolstad.net/gisbook.html)</figcaption>
 
 ---
 
-## Vertical datums
+### Vertical datums
 
 * Reference for measuring heights/elevation
 * Common vertical datums:
- * Mean sea level
- * The geoid (orthometric heights)
+  * Mean sea level
+  * The geoid (orthometric heights)
  
-<img src=img/heights.gif style="width: 400px">
+<img src=img/heights.gif style="width: 400px"><figcaption>Source: [Bolstad, _GIS Fundamentals_](http://www.paulbolstad.net/gisbook.html)</figcaption>
 
 ---
 
@@ -89,7 +83,7 @@ output:
 * Additional information supplied by:
  + Analysis of remotely sensed imagery / photogrammetry
  + Laser technology (Light Detection and Ranging, or LiDAR)
-* [USGS National Map Viewer: Portal for downloading DEMs](http://viewer.nationalmap.gov/viewer/)
+* [Data: USGS 3D Elevation Program](https://nationalmap.gov/3DEP/)
 
 ---
 
@@ -101,9 +95,9 @@ output:
 
 * Used to model the topographic characteristics of a given landscape
 * Applications:
- + Shaded relief mapping
- + Construction and transportation planning
- + Hydrologic modeling (flood zones, river flow, watershed boundary delineation)
+  + Shaded relief mapping
+  + Construction and transportation planning
+  + Hydrologic modeling (flood zones, river flow, watershed boundary delineation)
 
 ---
  
@@ -157,7 +151,7 @@ output:
 * __Viewshed__: the cells in a raster that can be viewed from a given point(s)
 * __Lines of sight__ calculated for points based on a DEM
 
-<img src=img/viewshed.png style="width: 800px">
+<img src=img/viewshed.png style="width: 800px"><figcaption>Source: [Bolstad, _GIS Fundamentals_](http://www.paulbolstad.net/gisbook.html)</figcaption>
 
 
 ---

@@ -19,7 +19,7 @@ output:
 
 ### Longitude and latitude: the basics
 
-<img src=img/coordinates.png>
+<img src=img/coordinates.png><figcaption>Source: [Bolstad, _GIS Fundamentals_](http://www.paulbolstad.net/gisbook.html)</figcaption>
 
 ---
 
@@ -43,7 +43,7 @@ $$DD = D + \frac{M}{60} + \frac{S}{3600}$$
 
 ---
 
-## Map projections
+### Map projections
 
 <iframe src="http://personal.tcu.edu/kylewalker/introgis/projections.html" width = "900" height = "500" frameBorder = "0"></iframe><figcaption>Original source: Mike Bostock</figcaption>
 
@@ -66,17 +66,17 @@ Examples:
 
 ---
 
-## Buffering
+### Buffering
 
 * A __buffer__ is a feature that delineates the area within a given distance of an input feature 
 
-<img src=img/buffer.gif style="width: 700px">
+<img src=img/buffer.gif style="width: 700px"><figcaption>Source: [Bolstad, _GIS Fundamentals_](http://www.paulbolstad.net/gisbook.html)</figcaption>
 
 ---
 
 ## Buffering, continued
 
-<img src=img/buffer2.png style="width: 800px">
+<img src=img/buffer2.png style="width: 800px"><figcaption>Source: [Bolstad, _GIS Fundamentals_](http://www.paulbolstad.net/gisbook.html)</figcaption>
 
 ---
 
@@ -88,7 +88,7 @@ Examples:
 
 ## Map overlay
 
-<img src=img/overlay.gif style="width: 800px">
+<img src=img/overlay.gif style="width: 800px"><figcaption>Source: [Bolstad, _GIS Fundamentals_](http://www.paulbolstad.net/gisbook.html)</figcaption>
 
 ---
 
@@ -108,8 +108,9 @@ Examples:
 
 ---
 
-## Density surfaces ("heat" maps)
+## Density surfaces 
 
+* Sometimes called "heat" maps
 * Raster grid fit over distribution of points
 * For each cell, the "density" of points is calculated for a "neighborhood" around that cell
 
@@ -119,7 +120,7 @@ Examples:
 
 * Creates a density surface by fitting a "kernel" (distance-decay function) over each cell
 
-<img src=img/kd1.jpg style="width: 800px">
+<img src=img/kd1.jpg style="width: 800px"><figcaption>Source: [Bolstad, _GIS Fundamentals_](http://www.paulbolstad.net/gisbook.html)</figcaption>
 
 ---
 

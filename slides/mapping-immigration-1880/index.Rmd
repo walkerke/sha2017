@@ -23,7 +23,7 @@ output:
 
 ---
 
-### Mapping Immigrant America
+### [Mapping Immigrant America](http://personal.tcu.edu/kylewalker/immigrant-america/)
 
 <iframe src="http://personal.tcu.edu/kylewalker/immigrant-america/" width = "900" height="600" frameborder="0" scrolling="no"></iframe>
 
@@ -59,9 +59,9 @@ output:
 
 ---
 
-## Data models: abstraction of reality
+### Data models: abstraction of reality
 
-<img src=img/data-models.png style="width: 850px">
+<img src=img/data-models.png style="width: 850px"><figcaption>Source: [Bolstad, _GIS Fundamentals_](http://www.paulbolstad.net/gisbook.html)</figcaption>
 
 ---
 
@@ -104,7 +104,7 @@ output:
 
 ---
 
-## Attribute data in a GIS: the __table__
+### Attribute data in a GIS: the __table__
 
 <img src=img/table.png style="width: 800px">
 
@@ -116,24 +116,9 @@ output:
 
 ---
 
-## Attribute types
-
-<img src=img/types.png style="width: 830px">
-
----
-
-## Joining and relating tables in a GIS
-
-* In a GIS, tables can be associated with each other through __joins__ or __relates__
-* __Join__: attributes from __target table__ merged to a __source table__
-* __Relate__: attributes from target table associated with source table; not merged in
-* Joins and relates based upon a __key field__
-
----
-
 ## Joins
 
-<img src=img/joins.png style="width: 750px">
+<img src=img/joins.png style="width: 700px"><figcaption>Source: [Bolstad, _GIS Fundamentals_](http://www.paulbolstad.net/gisbook.html)</figcaption>
 
 ---
 
@@ -147,7 +132,7 @@ output:
 
 ## Inner vs. outer joins
 
-<img src=img/innerouter.png style="width: 800px">
+<img src=img/innerouter.png style="width: 800px"><figcaption>Source: [Bolstad, _GIS Fundamentals_](http://www.paulbolstad.net/gisbook.html)</figcaption>
 
 ---
 
@@ -162,7 +147,7 @@ output:
 
 ---
 
-## __S__tructured __Q__uery __L__anguage (SQL)
+## Structured Query Language (SQL)
 
 * Common language for querying databases
 
@@ -211,7 +196,7 @@ SELECT * FROM Texas_counties WHERE "Total" > 100000
 
 ---
 
-## Visual variables in cartography
+### Visual variables in cartography
 
 <img src=img/vis-var.png style="width: 500px" />
 
@@ -259,9 +244,11 @@ SELECT * FROM Texas_counties WHERE "Total" > 100000
 
 ---
 
-## Visual hierarchy of map elements
+### Visual hierarchy of map elements
 
 <img src=img/hierarchy.png style="width: 800px" />
+
+<span class="footnote">Source: Brewer, *Designing Better Maps*</span>
 
 ---
 
