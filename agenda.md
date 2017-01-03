@@ -6,7 +6,9 @@
 
 __8:15-10:00: Mapping U.S. immigration in 1880__
 
-Topics to cover: 
+Slides: https://walkerke.github.io/sha2017/slides/mapping-immigration-1880/#/
+
+Topics we'll cover: 
 
 * The basics of spatial data
 * Interacting with spatial data in ArcMap
@@ -17,6 +19,8 @@ Topics to cover:
 __10:00-10:15: Break__
 
 __10:15-12:00: Analyzing cholera in 1850s London__
+
+Slides: https://walkerke.github.io/sha2017/slides/analyzing-cholera/#/
 
 Topics to cover: 
 
@@ -31,6 +35,8 @@ Topics to cover:
 
 __1:00-2:30: Re-constructing historical landscapes__
 
+Slides: https://walkerke.github.io/sha2017/slides/historical-landscapes/#/
+
 Topics to cover: 
 
 * Historical imagery
@@ -42,6 +48,8 @@ Topics to cover:
 __2:30-2:45: Break__
 
 __2:45-4:00: Interactive visualization of Civil War battle sites__
+
+https://walkerke.github.io/sha2017/slides/civil-war-battles/#/
 
 Topics to cover: 
 
